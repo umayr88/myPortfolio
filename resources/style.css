@@ -1,98 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* html{
-    background-color: darkgray;
-} */
+  background-color: darkgray;
+  } */
+
+body {
+	background: linear-gradient(135deg, #ffffff 25%, #f0f0f0 100%);
+	font-family: Arial, sans-serif;
+	color: #333;
+}
+
 .container {
-    max-width: 860px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add padding for inner spacing */
-  }
+	max-width: 860px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+	margin: 20px auto;
+}
 
-  #mypicture {
-    width: 20%;
-    float: right;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    filter: grayscale(0);
-  }
+#mypicture {
+	width: 20%;
+	float: right;
+	object-fit: cover;
+	border-radius: 15px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+	filter: grayscale(0);
+}
 
-  #mypicture:hover {
-    filter: grayscale(50%);
-    transform: scale(1.05);
-  }
+#mypicture:hover {
+	filter: grayscale(50%);
+	transform: scale(1.05);
+}
 
 header {
-    display: flex;
-    justify-content: space-between; 
-  }
+	display: flex;
+	justify-content: space-between;
+}
 
 .navbar {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    background-color:none;
-    padding: 10px;
-    
-  }
-  
-  .navbar ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar li {
-    margin: 0 10px;
-    font-size: large;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	background-color: none;
+	padding: 10px;
 
-  h1 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    clear: both;
-  }
+}
 
-  
-  p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    /* float: left; */
-    width: 70%;
-  }
+.navbar ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 
-  h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.navbar li {
+	margin: 0 10px;
+	font-size: large;
+}
 
-  .projectlist {
-    list-style-type: none; /* Remove default bullets */
-  }
-  
-  .projectlist li {
-    position: relative;
-    padding-left: 20px; /* Adjust padding as needed */
-  }
-  
- .projectlist li::before {
-    content: "\2794"; /* Different arrow character */
-  font-size: 12px;
-  color: #333;
-  padding-right: 5px;
-  }
+.navbar a {
+	text-decoration: none;
+	color: #333;
+	padding: 5px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	clear: both;
+}
+
+
+p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	/* float: left; */
+	width: 70%;
+}
+
+h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.hidden {
+	display: none;
+}
+
+.toggleButton {
+	font-size: 16px;
+	cursor: pointer;
+	/* margin-bottom: 5px; */
+	background-color: transparent;
+	border: none;
+	color: black;
+	/* padding: 5px 10px;  */
+	text-align: left;
+}
+
+.toggleButton:hover {
+	color: #0056b3;
+}
+
+.projectDetails {
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.project {
+	margin-bottom: 15px;
+} 
